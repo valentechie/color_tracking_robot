@@ -1,2 +1,2 @@
-# laboratorio_sistemas
-Este repositorio contiene apuntes, comandos esenciales y scripts útiles para la asignatura de Laboratorio de Sistemas.
+# Apuntes de Laboratorio de Sistemas
+Este repositorio contiene los apuntes y recursos sobre la asignatura de laboratorio de sistemas. Aquí encontrarás scripts, comandos y ejemplos prácticos sobre el uso básico del sistema, shell scripting, instalación de paquetes y gestión de cuentas.
