@@ -1,4 +1,5 @@
 # Órdenes básicas
+## Uso básico de la Shell
 - **ls**: Lista el contenido de un directorio (ficheros y subdirectorios)
 	- **ls -l**: Salida más larga
 - **cd**: Cambia de directorio (va al home)
@@ -15,3 +16,6 @@
 - **grep "patron" file**: Busca un patrón en un fichero (muestra la línea)
 - **sort file**: Ordena un conjunto de caracteres
 - **mv**: Mueve un fichero a otro lugar
+
+------------------------------------
+## Uso básico del Command-Line Interface
