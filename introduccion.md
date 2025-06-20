@@ -19,3 +19,15 @@
 
 ------------------------------------
 ## Uso básico del Command-Line Interface
+- **Foreground**: Ejecución de órdenes externas interactivas, **(fg)**: trae a primer plano un proceso que estaba en segundo plano
+- **Background**: Programa no interactivo (&), **(bg)**: pasa a segundo plano un proceso suspendido (Ctrl+Z)
+- **jobs**: Lista los procesos que se están ejecutando en segundo plano
+- **kill %(n de tarea)**: Termina la ejecución de un proceso en background
+
+### Variables y aritmética
+- **Operaciones**: ``$((expresión))``
+	- ``$ hola_mundo="Hola mundo"``			# debe estar todo junto
+ 	- ``$ echo $hola_mundo``			# imprime en pantalla el contenido de la variable, similar a *print*
+- **Órdenes**: ``$(orden)``
+	- ``nombre=$(whoami)``
+ 	- ``echo $nombre``				# Devuelve valentechie  
