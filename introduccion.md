@@ -31,3 +31,20 @@
 - **Órdenes**: ``$(orden)``
 	- ``nombre=$(whoami)``
  	- ``echo $nombre``				# Devuelve valentechie  
+- **Export**: Convierte una variable normal en una variable de entorno ``export``
+- **Expansión de nombres de ficheros**: ``ls ^a?[a-zA-Z]*.txt$``
+	- ``*``: corresponde a *'cualquier cadena de caracteres'*
+ 	- ``?``: corresponde a *'cualquier carácter'*
+  	- ``[conjunto]``: corresponde a *'cualquier carácter dentro del conjunto'*
+  	- ``^``: corresponde a *'empieza por'*
+  	- ``$``: corresponde a *'termina por'*
+
+### Redirecciones
+- **Descriptores de ficheros**:
+	- h
+
+
+
+
+
+ 
