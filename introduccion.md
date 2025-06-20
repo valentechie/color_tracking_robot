@@ -41,7 +41,11 @@
 
 ### Redirecciones
 - **Descriptores de ficheros**:
-	- h
+	- **``0``**: Entrada estándar
+ 	- **``1``**: Salida estándar, con **``>>``** añadimos la salida a un fichero existente (sobreescribimos)
+  	- **``2``**: Salida de error, con **``>&``** redirige al fichero tanto el mensaje de error como la salida estándar
+
+### Lista de órdenes 
 
 
 
