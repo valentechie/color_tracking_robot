@@ -55,3 +55,7 @@
 - **``||``**: solo si retorna con código !=0 (OR)
 
 ### Pipes
+``comando1 | comando2``
+- ``comando1`` genera una salida (texto, líneas, datos).
+- ``|`` **redirecciona esa salida** a la **entrada estándar** de ``comando2``.
+- El resultado es que ``comando2`` trabaja **como si leyera de un archivo**, pero está leyendo lo que generó el comando anterior.
