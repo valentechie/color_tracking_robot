@@ -14,9 +14,11 @@
 	- **Extrae el primer campo de un archivo**: ``cut -d',' -f1 archivo.txt``
 - **head**: Muestra el principio de un fichero
 - **tail**: Muestra el final de un fichero
+- **cp**: ``cp [opciones] origen destino``
 - **grep "patron" file**: Busca un patrón en un fichero (muestra la línea)
 - **sort file**: Ordena un conjunto de caracteres
 - **mv**: Mueve un fichero a otro lugar
+- **find**: ``find [ruta] [condiciones] [acciones]``, ``find ~/Documentos -name "notas.txt"``
 
 ------------------------------------
 ## Uso básico del Command-Line Interface
@@ -47,9 +49,9 @@
   	- **``2``**: Salida de error, con **``>&``** redirige al fichero tanto el mensaje de error como la salida estándar
 
 ### Lista de órdenes 
+- **``;``**: ejecución secuencial, devuelve $?
+- **``&``**: ejecución en segundo plano, devuelve 0
+- **``&&``**: solo si retorna con código 0 (AND)
+- **``||``**: solo si retorna con código !=0 (OR)
 
-
-
-
-
- 
+### Pipes
