@@ -10,7 +10,8 @@
 - **cat > file** y **nano file**: Creación y modificación de ficheros
 - **more file** y **cat file**: Muestran el contenido de un fichero
 - **wc file**: Muestra el número de líneas, palabras y caracteres
-- **cut**: Trocea un fichero en los rangos indicados
+- **cut**: Trocea un fichero en los rangos indicados ``cut [opciones] [archivo]``
+	- **Extrae el primer campo de un archivo**: ``cut -d',' -f1 archivo.txt``
 - **head**: Muestra el principio de un fichero
 - **tail**: Muestra el final de un fichero
 - **grep "patron" file**: Busca un patrón en un fichero (muestra la línea)
