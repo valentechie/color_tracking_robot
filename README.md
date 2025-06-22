@@ -5,4 +5,4 @@ Este repositorio contiene algunos apuntes sobre la asignatura de laboratorio de 
 
 [2. Shell scripting](https://github.com/valentechie/laboratorio_sistemas/blob/main/shell_scripting.md)
 
-7. Arranque del sistema
+[Teoría PDF]()
