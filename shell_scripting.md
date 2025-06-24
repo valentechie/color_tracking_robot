@@ -104,9 +104,7 @@ done
 
 ### Otros elementos
 - **``read``**: permite leer una línea desde su entrada estandar y guardarla en una variable que pasa como argumento
-- **``IFS``**: contiene los caracteres reconocidos como separadores entre campos **(\t, \n, '')**
-
-
+    - **``IFS``**: contiene los caracteres reconocidos como separadores entre campos **\t**: tabulador, **\n**: salto de línea, **''**: espacio en blanco
 
 
 
