@@ -85,3 +85,11 @@ case $accion in
         ;;
 esac
 ```
+- **Sentencia while**: empieza con **while**, luego sigue **do** y termina con **done**
+```bash
+#!/bin/bash
+```
+- **Sentencia for**: empieza con **for...in**, luego sigue **do** y termina con **done**
+```bash
+#!/bin/bash
+```
