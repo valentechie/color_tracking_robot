@@ -103,4 +103,16 @@ done
 ```
 
 ### Otros elementos
-- **``read``**: 
+- **``read``**: permite leer una línea desde su entrada estandar y guardarla en una variable que pasa como argumento
+- **``IFS``**: contiene los caracteres reconocidos como separadores entre campos **(\t, \n, '')**
+
+
+
+
+
+
+
+
+
+
+
