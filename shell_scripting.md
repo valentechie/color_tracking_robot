@@ -17,79 +17,90 @@
 - **$@**: devuelve los parámetros separados en varias cadenas
 - **shift**: desplaza los parámetros, **$3 ==> $2** y actualiza **$#**
 
-### Control de Flujo y otros elementos
+### Control de Flujo
 - **Sentencia if**: comienza con **if**, luego sigue **elif** o **else** y termina con **fi**
 ```bash
 #!/bin/bash
 
-### Control de Flujo y otros elementos
-
-# Definimos la ruta al archivo directamente usando $HOME
 archivo="$HOME/Escritorio/example.txt"
 
-# Comprobamos si el archivo existe
 if [ -f $archivo ]; then
-    echo "El archivo $archivo existe."
-
-    # Contar líneas que contengan la palabra 'error'
-    errores=$(grep -i "error" $archivo | wc -l)
-
-    # Evaluar si hay errores
-    if [ "$errores" -gt 0 ]; then
-        echo "Se encontraron $errores líneas con 'error'."
+    if [ -r $archivo ]; then
+        echo "El archivo $archivo existe y es legible."
     else
-        echo "No se encontraron errores en el archivo."
+        echo "El archivo $archivo existe, pero no tienes permiso de lectura."
     fi
-
 elif [ -d "$archivo" ]; then
     echo "$archivo es un directorio, no un archivo."
-
 else
     echo "El archivo $archivo no existe."
-    echo "Creando archivo de ejemplo..."
-    mkdir -p "$HOME/Escritorio"
-    echo "Este es un archivo de ejemplo sin errores." > $archivo
-    echo "Archivo creado: $archivo"
 fi
 ```
 - **Sentencia case (switch)**: empieza con **case** y termina con **esac**
 ```bash
 #!/bin/bash
 
-# Pedimos una acción al usuario
-echo "¿Qué quieres hacer? (crear, borrar, listar)"
-read accion
+# Script de menú usando 'case'
 
-# Evaluamos la acción usando 'case'
-case $accion in
-    crear)
-        echo "Creando archivo de ejemplo..."
-        touch ejemplo.txt
-        echo "Archivo ejemplo.txt creado."
-        ;;
-    
-    borrar | eliminar)
-        echo "Borrando archivo de ejemplo..."
-        rm -f ejemplo.txt
-        echo "Archivo ejemplo.txt eliminado (si existía)."
-        ;;
+echo "Elige una opción:"
+echo "1) Mostrar la fecha"
+echo "2) Mostrar el contenido del directorio actual"
+echo "3) Salir"
 
-    listar)
-        echo "Mostrando archivos en el directorio actual:"
+read opcion
+
+case "$opcion" in
+    1)
+        echo "Fecha actual:"
+        date
+        ;;
+    2)
+        echo "Contenido del directorio:"
         ls -lh
         ;;
-
-    *)  # patrón por defecto si no coincide con ninguno
-        echo "Opción no reconocida: $accion"
-        echo "Opciones válidas: crear, borrar/eliminar, listar"
+    3)
+        echo "Saliendo del programa. ¡Hasta luego!"
+        ;;
+    *)  # Valor por defecto si no coincide con ningún caso
+        echo "Opción no válida. Debes elegir entre 1 y 4."
         ;;
 esac
 ```
 - **Sentencia while**: empieza con **while**, luego sigue **do** y termina con **done**
 ```bash
 #!/bin/bash
+
+# Contador desde 1 hasta un número que indique el usuario
+
+echo "¿Hasta qué número quieres contar?"
+read limite
+
+contador=1
+
+while [ "$contador" -le "$limite" ]; do
+    echo "Contando: $contador"
+    contador=$((contador + 1))
+done
+
+echo "¡Listo! Contamos hasta $limite."
 ```
 - **Sentencia for**: empieza con **for...in**, luego sigue **do** y termina con **done**
 ```bash
 #!/bin/bash
+
+# Script que cuenta las líneas de todos los archivos .txt en el directorio actual
+
+echo "Analizando archivos .txt en el directorio actual..."
+
+for archivo in *.txt; do
+    if [ -f "$archivo" ]; then
+        lineas=$(wc -l < "$archivo")
+        echo "$archivo: $lineas líneas"
+    else
+        echo "No hay archivos .txt para analizar."
+    fi
+done
 ```
+
+### Otros elementos
+- **``read``**: 
