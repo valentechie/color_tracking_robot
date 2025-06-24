@@ -108,7 +108,7 @@ done
 - **``alias <nombre> = <comandos>``**: Define una etiqueta para invocar un comando o conjunto de comandos
 - **``Uso de test``**:
     - **test (ficheros)**: ``-f fichero`` (existe), ``-d directorio`` (existe)
-    - **test (cadenas)**: ``-n string`` (longitud != 0), ``-z string`` (longitud = 0), ``str1 = str2`` (iguales), ``str1 != str2`` (diferentes), ``string`` (cadena no nula).
+    - **test (cadenas)**: ``-n string`` (longitud != 0), ``-z string`` (longitud = 0), ``str1 = str2`` (iguales), ``str1 != str2`` (diferentes), ``string`` (cadena no nula)
     - **test (enteros)**: 
         - ``int1 -eq int2`` **(iguales)**
         - ``int1 -ne int2`` **(diferentes)**
@@ -116,5 +116,9 @@ done
         - ``int1 -ge int2`` **(mayor o igual que)**
         - ``int1 -lt int2`` **(menor que)**
         - ``int1 -le int2`` **(menor o igual que)**
-
+- **Sintaxis para test**: ``[ $a -eq $b ] == test $a -eq $b``
+- **``bc``**: Permite realizar operaciones que involucran números enteros, ``echo "3+4" | bc``
+- **``du -a y find .``**: Para recorrer un árbol de ficheros
+- **``join``**: Calcula la intersección de valores presentes en dos columnas previamente ordenadas
+- **``xargs``**: Usa lo que nos viene por la entrada estándar como argumento de entrada al ejecutar otro comando
 
