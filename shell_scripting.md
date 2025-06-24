@@ -104,13 +104,17 @@ done
 
 ### Otros elementos
 - **``read``**: permite leer una línea desde su entrada estandar y guardarla en una variable que pasa como argumento
-    - **``IFS``**: contiene los caracteres reconocidos como separadores entre campos **\t**: tabulador, **\n**: salto de línea, **''**: espacio en blanco
-
-
-
-
-
-
-
+- **``IFS``**: contiene los caracteres reconocidos como separadores entre campos **\t**: tabulador, **\n**: salto de línea, **''**: espacio en blanco
+- **``alias <nombre> = <comandos>``**: Define una etiqueta para invocar un comando o conjunto de comandos
+- **``Uso de test``**:
+    - **test (ficheros)**: ``-f fichero`` (existe), ``-d directorio`` (existe)
+    - **test (cadenas)**: ``-n string`` (longitud != 0), ``-z string`` (longitud = 0), ``str1 = str2`` (iguales), ``str1 != str2`` (diferentes), ``string`` (cadena no nula).
+    - **test (enteros)**: 
+        - ``int1 -eq int2`` **(iguales)**
+        - ``int1 -ne int2`` **(diferentes)**
+        - ``int1 -gt int2`` **(mayor que)**
+        - ``int1 -ge int2`` **(mayor o igual que)**
+        - ``int1 -lt int2`` **(menor que)**
+        - ``int1 -le int2`` **(menor o igual que)**
 
 
