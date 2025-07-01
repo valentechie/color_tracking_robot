@@ -163,5 +163,12 @@ done
     - **número**: actúa en la línea numero
     - **/ /**: lineas que coinciden con exp
     - **$**: última linea 
+- ``sed (intervalos)``:
+    - **numero,numero**: de linea numero hasta linea numero
+    - **numero,$**: desde linea numero hasta la ultima linea
+    - **numero,/ /**: desde la linea numero hasta la primera linea que encaja con exp
 
+- ``sed -E '3,6d'``: borra la linea desde 3 hasta 6
+- ``
+  
 ### AWK
