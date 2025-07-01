@@ -125,6 +125,33 @@ done
 ------------------------------------
 
 ## Filtros y expresiones regulares
--
--
--
+### Filtros útiles
+- ``sort``: Ordena las líneas de diversas formas
+- **Comandos de filtros**:
+    - ``uniq``: Elimina las líneas contiguas repetidas
+    - ``head``: Primeras líneas 
+    - ``tail``: Últimas líneas
+- **Comparación de ficheros**: 
+    - ``diff``: Fichero de texto línea a línea
+    - ``vimdiff``: Version mejorada, más visual
+    - ``cmp``: Ficheros binarios byte a byte
+- ``tr``: Traductor un conjunto de caracteres, ``-d``: Borra el conjunto de caracteres pasado como argumento
+
+### Expresiones regulares
+- **.** Cualquier caracter
+- **[conjunto]**: Cualquier caracter dentro del conjunto
+- **[^conjunto]**: Cualquier caracter que no esté dentro del conjunto
+- **^**: Principio de línea
+- **$**: Final de línea
+- **exp***: aparece cero o más veces
+- **exp+**: una o más veces
+- **exp$**: cero o una vez
+- **(exp)**: agrupa
+- \: evita que un simbolo pierda su significado especial
+- **|**: condición lógica OR
+- ``egrep``: Filtra lineas usando expresiones regulares
+
+### SED
+
+
+### AWK
