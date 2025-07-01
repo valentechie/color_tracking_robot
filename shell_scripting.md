@@ -147,11 +147,21 @@ done
 - **exp+**: una o más veces
 - **exp$**: cero o una vez
 - **(exp)**: agrupa
-- \: evita que un simbolo pierda su significado especial
+- \ **barra inclinada**: evita que un simbolo pierda su significado especial
 - **|**: condición lógica OR
 - ``egrep``: Filtra lineas usando expresiones regulares
 
 ### SED
-
+- ``sed (opciones)``:
+    - **-E**: uso de regex extendidas
+    - **q**: sale del programa
+    - **d**: borra la linea
+    - **p**: imprime la linea
+    - **r**: lee e inserta un fichero
+    - **s**: sustituye
+- ``sed (direcciones)``:
+    - **número**: actúa en la línea numero
+    - **/ /**: lineas que coinciden con exp
+    - **$**: última linea 
 
 ### AWK
