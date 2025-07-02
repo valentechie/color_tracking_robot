@@ -107,7 +107,7 @@ done
 - **``IFS``**: contiene los caracteres reconocidos como separadores entre campos **\t**: tabulador, **\n**: salto de línea, **''**: espacio en blanco
 - **``alias <nombre> = <comandos>``**: Define una etiqueta para invocar un comando o conjunto de comandos
 - **Uso de test**:
-    - **test (ficheros)**: ``-f fichero`` (existe), ``-d directorio`` (existe), ``-e fichero`` (comprueba si existe ya sea fichero o no)
+    - **test (ficheros)**: ``-f fichero`` (existe), ``-d directorio`` (existe), ``-e fichero`` (comprueba si existe ya sea fichero o no), ``-x fichero`` (comprueba si el fichero ya tiene permisos de ejecución)
     - **test (cadenas)**: ``-n string`` (longitud != 0), ``-z string`` (longitud = 0), ``str1 = str2`` (iguales), ``str1 != str2`` (diferentes), ``string`` (cadena no nula)
     - **test (enteros)**: 
         - ``int1 -eq int2`` **(iguales)**
