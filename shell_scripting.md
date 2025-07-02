@@ -169,7 +169,6 @@ done
     - **numero,/ /**: desde la linea numero hasta la primera linea que encaja con exp
 
 - ``sed -E '3,6d'``: borra la linea desde 3 hasta 6
-- ``j
   
 ### AWK
 ``patrón { acción }``
