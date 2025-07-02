@@ -172,3 +172,11 @@ done
 - ``j
   
 ### AWK
+``patrón { acción }``
+- **``print``**: Imprime campos: ``awk '{print $1, $3}'`` **Imprime el primer y tercer campo**
+- **Variables especiales**:
+    - ``$0``	    Línea completa
+    - ``$1, $2…``	Campos individuales (divididos por espacios o delimitador)
+    - ``NR``	    Número de línea (registro)
+    - ``NF``	    Número de campos
+    - ``FILENAME``	Nombre del fichero procesado
